@@ -1,0 +1,26 @@
+{
+  "name": "test-server",
+  "version": "1.0.0",
+  "description": "test server to fetch data",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhi1999/test-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhi1999/test-server/issues"
+  },
+  "homepage": "https://github.com/abhi1999/test-server#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "faker": "^4.1.0",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2"
+  }
+}
