@@ -27,7 +27,25 @@ app.get("/", (req, res)=>{
     res.json({"name":"server  root", date: new Date().getTime()})
 })
 
-
+app.get("odata/getAllTileData", (req, res)=>{
+    var retData ={
+        values:[ {
+            "ShortCutID": 11,
+            "Title": "Send Request for Quote to ERP",
+            "GroupName": "Quote",
+            "ControlID": 60031,
+            "ControlName": "Send Request for Quote to ERP",
+            "MethodCall": "QuoteMenuItem1",
+            "func_code": "",
+            "MethodParams": "",
+            "Type": "1",
+            "BeginGroup": false,
+            "GroupColor": "&H00C0C000",
+            "GroupOrder": 0,
+            "ControlOrder": 1
+        },]
+    }
+})
 const appListener = app.listen(process.env.PORT || 3001, ()=>{
     console.log(`app.listen; port ${appListener.address().port}`);
 })
